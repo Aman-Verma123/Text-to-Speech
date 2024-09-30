@@ -1,0 +1,149 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e0f7fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.app-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.app-container:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 2.2em;
+  color: #00796b;
+  margin-bottom: 20px;
+}
+
+/* Textarea Styles */
+#text-input {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1em;
+  border: 2px solid #b2dfdb;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  resize: none;
+  background-color: #f1f8e9;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease;
+}
+
+#text-input:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+/* Controls styling */
+.controls {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1em;
+  color: #555;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Dropdown */
+#voices {
+  padding: 8px;
+  border: 2px solid #b2dfdb;
+  border-radius: 8px;
+  width: 100%;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+#voices:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+/* Range inputs */
+input[type="range"] {
+  width: 70%;
+}
+
+span {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Buttons */
+button {
+  width: 48%;
+  padding: 12px;
+  font-size: 1.1em;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px 1%;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #004d40;
+  transform: translateY(-2px);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+/* Clear button */
+#clear-btn {
+  background-color: #ff5722;
+}
+
+#clear-btn:hover:not(:disabled) {
+  background-color: #e64a19;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  button {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  input[type="range"] {
+    width: 100%;
+  }
+}
